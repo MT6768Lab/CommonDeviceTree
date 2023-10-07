@@ -182,15 +182,6 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # IMS
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
@@ -281,8 +272,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+# Private keys
+-include vendor/lineage-priv/keys/keys.mk
+
 # Properties
-include $(LOCAL_PATH)/vendor_logtag.mk
+include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
