@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    FMRadio
+    RevampedFMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
