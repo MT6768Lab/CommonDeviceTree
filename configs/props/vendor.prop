@@ -110,6 +110,8 @@ ro.vendor.mtk_log_hide_gps=0
 # HWUI
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
 
 # IMS
 ro.vendor.md_auto_setup_ims=1
